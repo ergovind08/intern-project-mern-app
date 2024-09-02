@@ -1,0 +1,41 @@
+/* src/components/Sidebar.css */
+.sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    height: 100vh;
+    transition: width 0.3s;
+    position: relative;
+  }
+  
+  .sidebar.collapsed {
+    width: 80px; /* Adjust the width as needed */
+  }
+  
+  .sidebar-content {
+    padding: 10px;
+    transition: opacity 0.3s;
+  }
+  
+  .sidebar.collapsed .sidebar-content {
+    opacity: 0;
+  }
+  
+  .toggle-button {
+    position: absolute;
+    top: 10px;
+    right: -30px; /* Position the button outside the sidebar */
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+  }
+  
+  .toggle-button:hover {
+    background-color: #ccc;
+  }
+  
